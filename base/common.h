@@ -1,4 +1,5 @@
 /* date = October 1st 2023 1:21 pm */
+/* author: huantran */
 
 #ifndef COMMON_H
 #define COMMON_H
@@ -11,6 +12,10 @@ typedef bool b32;
 #define Assert(condition) if(!(condition)) { (*(void**)0) = 0;}
 #define function static
 #define ArrayCount(a) ((sizeof(a))/(sizeof(*a)))
+
+#define KB(n) ((n) * 1024)
+#define MB(n) ((n) * KB(1024))
+#define GB(n) ((n) * MB(1024))
 
 struct String8 {
     char *str;
